@@ -1,0 +1,59 @@
+/* Responsive layout for smaller screens */
+@media (max-width: 1180px) {
+    .profile-pic{
+        width: 135px;
+        height: 135px;
+    }
+    
+    .welcome h4{
+        font-size: 1em;
+    }
+
+}
+
+@media (max-width: 950px) {
+  
+    .profile-pic{
+        right: 1em;
+    }
+
+    .container{
+        width: 75%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 90%;
+    }
+    .cards-container {
+        grid-template-columns: 1fr; /* Stack columns vertically on smaller screens */
+        grid-template-rows: auto auto; /* Ensure rows adjust based on content */
+        font-size: 0.95em;
+
+    }
+    
+    .left-column {
+        order: 1; /* Ensure left column comes first */
+    }
+
+    .right-column {
+        order: 2; /* Ensure right column comes second */
+        font-size: 0.9em;
+
+    }
+  
+    .profile-pic{
+        width: 120px;
+        height: 120px;
+    }
+    .welcome{
+        font-size: 0.8em;
+    }
+    .welcome h4{
+        font-size: 1em;
+    }
+    .projects-container {
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+    }
+}
